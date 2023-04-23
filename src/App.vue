@@ -1,4 +1,4 @@
-<script >
+<!-- <script >
 export default {
   data () {
     return {
@@ -7,12 +7,29 @@ export default {
     }
   }
 }
-</script>
+</script> -->
 
-<template>
-  <!--short <img :src="href"> -->
+<!-- <template>
+  short <img :src="href">
   <img v-bind:src="href">
   <div>{{ text }}</div>
+</template> -->
+
+<script>
+export default {
+  data() {
+    return {
+      num1: 2,
+      num2: 3,
+      num3: 4
+    }
+  }
+}
+</script>
+
+
+<template>
+  {{ num1 + num2 + num3 }}  
 </template>
 
 <style scoped>
