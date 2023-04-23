@@ -15,7 +15,7 @@ export default {
   <div>{{ text }}</div>
 </template> -->
 
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -30,6 +30,20 @@ export default {
 
 <template>
   {{ num1 + num2 + num3 }}  
+</template> -->
+
+<script>
+export default {
+  data () {
+    return {
+      obj: {x: 1, y: 2, z: 3}
+    }
+  }
+}
+</script>
+
+<template>
+  {{ obj.x + obj.y + obj.z}}
 </template>
 
 <style scoped>
