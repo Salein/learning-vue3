@@ -32,7 +32,7 @@ export default {
   {{ num1 + num2 + num3 }}  
 </template> -->
 
-<script>
+<!-- <script>
 export default {
   data () {
     return {
@@ -44,6 +44,29 @@ export default {
 
 <template>
   {{ obj.x + obj.y + obj.z}}
+</template>
+
+<style scoped>
+
+</style> -->
+
+
+<script>
+export default {
+  data() {
+
+    },
+    methods: {
+      showDate: function() {
+        alert(new Date())
+      }
+    }
+  }
+
+</script>
+
+<template>
+  {{ showDate() }}
 </template>
 
 <style scoped>
