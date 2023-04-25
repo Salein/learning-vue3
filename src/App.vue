@@ -51,7 +51,7 @@ export default {
 </style> -->
 
 
-<script>
+<!-- <script>
 export default {
   data() {
 
@@ -67,6 +67,30 @@ export default {
 
 <template>
   {{ showDate() }}
+</template>
+
+<style scoped>
+
+</style> -->
+
+
+<script>
+export default {
+  data() {
+
+    },
+    methods: {
+      showDate: function() {
+        alert(new Date())
+      }
+    }
+  }
+  
+</script>
+
+<template>
+  <!-- short record <button @click="showDate">Click</button> -->
+  <button v-on:click="showDate">Click</button>
 </template>
 
 <style scoped>
