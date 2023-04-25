@@ -74,7 +74,7 @@ export default {
 </style> -->
 
 
-<script>
+<!-- <script>
 export default {
   data() {
 
@@ -89,8 +89,33 @@ export default {
 </script>
 
 <template>
-  <!-- short record <button @click="showDate">Click</button> -->
+   <button @click="showDate">Click</button> - short record
   <button v-on:click="showDate">Click</button>
+</template>
+
+<style scoped>
+
+</style> -->
+
+<script>
+export default {
+  data() {
+    return {
+      num1: 1,
+      num2: 2
+    }
+    },
+    methods: {
+      showSum: function() {
+        alert(this.num1 + this.num2)
+      }
+    }
+  }
+  
+</script>
+
+<template>
+  <button v-on:click="showSum">Click</button>
 </template>
 
 <style scoped>
