@@ -101,13 +101,16 @@ export default {
 export default {
   data() {
     return {
-      num1: 1,
-      num2: 2
+      text: 'hello',
     }
     },
     methods: {
-      showSum: function() {
-        alert(this.num1 + this.num2)
+      showText: function() {
+        let text = this.caps(this.text)
+        alert(text)
+      },
+      caps: function(str) {
+        return str.toUpperCase()
       }
     }
   }
@@ -115,7 +118,7 @@ export default {
 </script>
 
 <template>
-  <button v-on:click="showSum">Click</button>
+  <button v-on:click="showText">Click</button>
 </template>
 
 <style scoped>
