@@ -97,7 +97,7 @@ export default {
 
 </style> -->
 
-<script>
+<!-- <script>
 export default {
   data() {
     return {
@@ -119,6 +119,31 @@ export default {
 
 <template>
   <button v-on:click="showText">Click</button>
+</template>
+
+<style scoped>
+
+</style> -->
+
+<script>
+export default {
+  data() {
+    return {
+      sum: 3
+    }
+    },
+    methods: {
+      x: function() {
+        this.sum *= 2
+      }
+    }
+  }
+  
+</script>
+
+<template>
+  <div>{{ sum }}</div>
+  <button @click="x(2)">Click</button>
 </template>
 
 <style scoped>
